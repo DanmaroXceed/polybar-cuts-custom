@@ -29,12 +29,10 @@ case "$1" in
     --up)
         # Increase brightness and trigger a Polybar update
         brightnessctl set +5%
-        polybar-msg action brightness update
         ;;
     --down)
         # Decrease brightness and trigger a Polybar update
         brightnessctl set 5%-
-        polybar-msg action brightness update
         ;;
     *)
         # Default action: print the bar
